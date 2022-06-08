@@ -1,0 +1,14 @@
+<!doctype html>
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+
+  %head
+    %meta{:charset => "UTF-8" }
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+
+    %title 9 ТЕХ РУС
+    = Haml::Engine.new(File.read("src/styles/styles.css.haml")).render
+
+  %body
+    = Haml::Engine.new(File.read("src/components/common/header.haml")).render
+    = Haml::Engine.new(File.read("src/components/common/main.haml")).render
+    = Haml::Engine.new(File.read("src/components/common/footer.haml")).render

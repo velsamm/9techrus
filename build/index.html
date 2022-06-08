@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta charset='UTF-8'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<title>9 ТЕХ РУС</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+  
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  header {
+    padding: 16px;
+    color: #ffffff;
+    background-color: #000000;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1 0 0;
+  }
+  
+  .technologies {
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url("/public/development-js.jpg");
+    background-size: cover;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+  }
+  
+  .technologies .inner {
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  .technologies .title {
+    font-size: 48px;
+    line-height: 1.23;
+    padding: 24px 0 24px 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  
+  .technologies .subtitle {
+    font-size: 22px;
+    line-height: 1.55;
+    padding: 15px 0 30px 0;
+  }
+  
+  .development {
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url("/public/development-1.jpg");
+    background-size: cover;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+  }
+  
+  .development .inner {
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  .development .title {
+    font-size: 72px;
+    line-height: 1.17;
+    padding: 24px 0 24px 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  
+  .development .subtitle {
+    font-size: 22px;
+    line-height: 1.55;
+    padding: 15px 0 30px 0;
+  }
+  
+  .development p {
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .technologies p {
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .description {
+    text-align: center;
+    vertical-align: middle;
+  
+    padding-top: 150px;
+    padding-bottom: 180px;
+    background-color: #f5f5f5;
+  }
+  
+  .description .inner {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .description .header {
+    font-size: 42px;
+    line-height: 1.23;
+    font-weight: 600;
+    margin-bottom: 105px;
+  }
+  
+  .description .title {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .description .info {
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+  }
+  
+  .price {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-top: 90px;
+    padding-bottom: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .thtitle {
+    border-width: 0 0 1px 0;
+    border-color: #000000;
+  }
+  
+  .oddrow {
+    border-right: 1px solid #ffffff;
+    background-color: #ffffff;
+  }
+  
+  .evenrow {
+    background-color: #eeeeee;
+  }
+  
+  .contacts {
+    padding: 100px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+  }
+  
+  .contacts .inner {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .contacts .title {
+    margin-bottom: 45px;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 600;
+  }
+  
+  .contacts .phone {
+    font-size: 36px;
+    line-height: 1.23;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .contacts .email {
+    font-size: 36px;
+    line-height: 1.23;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .contacts .name {
+    margin-top: 45px;
+    font-size: 18px;
+    line-height: 1.55;
+    margin-bottom: 0;
+  }
+  
+  .contacts .inn {
+    font-size: 18px;
+    line-height: 1.55;
+    margin-bottom: 0;
+  }
+  
+  .contacts .ogrn {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  
+  .btn {
+    background-color: #c72525;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-decoration: none;
+    height: 60px;
+    border: 0 none;
+    font-size: 16px;
+    padding: 16px 40px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-weight: 700;
+    background-image: none;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  @media(max-width: 576px) {
+      .development {
+        padding: 0 36px;
+      }
+  
+      .development .title {
+        font-size: 36px;
+      }
+  
+      .row {
+        flex-direction: column;
+      }
+  
+      .description .header {
+          font-size: 24px;
+        }
+  
+      .description {
+        padding: 64px 36px;
+      }
+  
+      .technologies {
+        padding: 0 36px;
+      }
+  
+      .technologies .title {
+        font-size: 36px;
+      }
+  
+      .price {
+        padding: 64px 36px;
+      }
+  
+      .contacts {
+        padding: 150px 36px;
+      }
+    }
+</style>
+
+</head>
+<body>
+<header>
+<span class='logo'>9 ТЕХ РУС</span>
+</header>
+
+<main>
+<div class='development'>
+<div class='inner'>
+<p class='title'>Профессиональная разработка</p>
+<p class='subtitle'>Создаем веб-сервисы, мобильные и десктоп приложения, телеграм-боты</p>
+<a class='btn' href='#contacts'>
+<span>Свяжитесь с нами</span>
+</a>
+</div>
+</div>
+
+<div class='description'>
+<p class='header'>Наши услуги</p>
+<div class='inner row'>
+<div class='col'>
+<p class='title'>Веб-приложения</p>
+<p class='info'>Создаём единые платформы для целей планирования, отчётности, осуществления коммерческой деятельности, управления коммуникациями и постановки задач</p>
+</div>
+<div class='col'>
+<p class='title'>Мобильные приложения</p>
+<p class='info'>Создаем приложения для эффективного решения задач продаж, сервиса и маркетинга. Внедряем механики геймификации для быстрой проверки гипотез и альтернативного решения задач бизнеса</p>
+</div>
+<div class='col'>
+<p class='title'>Телеграм боты</p>
+<p class='info'>Чат бот с подключением к API. Большой чат бот с разделами FAQ. Брендированный чат бот со стилизацией под клиента</p>
+</div>
+</div>
+</div>
+
+<div>
+<div class='price'>
+<table data-table-width='70%;30%' width='100%'>
+<thead>
+<tr>
+<th class='thtitle' width='70%'>Услуга</th>
+<th class='thtitle' width='30%'>Цена</th>
+</tr>
+</thead>
+<tbody>
+<tr class='oddrow'>
+<td width='70%'>Адаптация сайта к SEO</td>
+<td width='30%'>От 1 500 000 рублей (в зависимости от работы, необходимо уточнять)</td>
+</tr>
+<tr class='evenrow'>
+<td width='70%'>Разработка сайта</td>
+<td width='30%'>От 800 000 рублей (в зависимости от работы, необходимо уточнять) + дополнительно оплачивается услуги дизайнера, цена зависит от кол-ва работы</td>
+</tr>
+<tr class='oddrow'>
+<td width='70%'>Консалтинговые услуги в сфере информационных технологий</td>
+<td width='30%'>От 500 000 рублей (в зависимости от работы, необходимо уточнять)</td>
+</tr>
+<tr class='evenrow'>
+<td width='70%'>CRM система для управления клиентами</td>
+<td width='30%'>От 2 500 000 рублей (в зависимости от работы, необходимо уточнять).</td>
+</tr>
+<tr class='oddrow'>
+<td width='70%'>Создание Телеграм-бота</td>
+<td width='30%'>От 300 000 рублей (в зависимости от работы, необходимо уточнять).</td>
+</tr>
+<tr class='evenrow'>
+<td width='70%'>Система приема заявок через интернет</td>
+<td width='30%'>От 1 000 000 рублей (в зависимости от работы, необходимо уточнять).</td>
+</tr>
+<tr class='oddrow'>
+<td width='70%'>Разрабатываем и внедряем программное обеспечение различного уровня сложности, создаем интернет-сервисы и интернет-системы</td>
+<td width='30%'>От 1 000 000 рублей (в зависимости от работы, необходимо уточнять).</td>
+</tr>
+<tr class='evenrow'>
+<td width='70%'>Внедрение воронки продаж в CRM систему</td>
+<td width='30%'>От 1 500 000 рублей (в зависимости от работы, необходимо уточнять).</td>
+</tr>
+<tr class='oddrow'>
+<td width='70%'>Адаптация сайта для мобильных приложений</td>
+<td width='30%'>От 1 900 000 рублей (в зависимости от работы, необходимо уточнять).</td>
+</tr>
+<tr class='evenrow'>
+<td width='70%'>Мобильное приложение для приема заказов. Интернет-магазин</td>
+<td width='30%'>От 2 000 000 рублей (в зависимости от работы, необходимо уточнять) + дополнительно оплачивается услуги дизайнера, цена зависит от кол-ва работы.</td>
+</tr>
+<tr class='oddrow'>
+<td width='70%'>Интеграционные решения</td>
+<td width='30%'>От 500 000 рублей (в зависимости от работы, необходимо уточнять)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class='technologies'>
+<div class='inner'>
+<p class='title'>Современные технологии для современных приложений</p>
+<p class='subtitle'>JavaScript, Java, Kotlin, Python, React Native, .NET и многие другие</p>
+<a class='btn' href='#contacts'>
+<span>Свяжитесь с нами</span>
+</a>
+</div>
+</div>
+
+<div class='contacts' id='contacts'>
+<div class='inner'>
+<p class='title'>Контакты</p>
+<p class='phone'>+7 903 465 30 37</p>
+<p class='email'>9techrus@gmail.com</p>
+<p class='name'>ООО «9ТЕХ РУС»</p>
+<p class='inn'>ИНН/КПП: 9729312325/ 772901001</p>
+<p class='ogrn'>ОГРН: 1217700384131</p>
+<a href='https://disk.yandex.ru/i/P6lAB_gKvv0WxA' target='_blank'>Публичный договор оферты</a>
+</div>
+</div>
+
+</main>
+
+
+</body>
+</html>
